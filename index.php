@@ -196,7 +196,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="col-lg-12 col-12">
 
                             <?php
-                        $query = "SELECT * FROM patient_tbl order by 'hospital_no' DESC ";
+                        $query = "SELECT * FROM patient_tbl ";
                         $stmt=$conn->prepare($query);
                         $stmt->execute();
                         $result= $stmt->get_result();
